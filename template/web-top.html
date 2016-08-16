@@ -1,0 +1,2359 @@
+<html lang="ja" data-avail-langs="ja en" data-page="index" data-static-domain="//cdn.blog.st-hatena.com" data-blog="aloedev.hatenablog.com" data-blog-name="星空コメントアウト" data-blogs-uri-base="http://aloedev.hatenablog.com" data-globalheader-color="b" data-author="cocoro27" data-version="1e5d0a51152133e81b9215709db77a50" data-blog-comments-top-is-new="" data-plus-available="1" data-admin-domain="http://blog.hatena.ne.jp" data-brand="hatenablog" data-has-touch-view="1" data-no-suggest-touch-view="1" itemscope="" itemtype="http://schema.org/Blog" data-device="pc" data-globalheader-type="pc" data-initial-state="{}"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><script async="" type="text/javascript" src="//b.hatena.ne.jp/api/dfp.config.json?callback=hatenadfp.displayAdsWithContentMatch"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/r20160811171912/recaptcha__ja.js"></script>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9; IE=10; IE=11">
+    <title>星空コメントアウト</title>
+
+
+      <meta name="robots" content="noindex,nofollow,noarchive">
+
+
+
+      <link rel="canonical" href="http://aloedev.hatenablog.com/">
+
+
+
+
+
+<meta itemprop="name" content="星空コメントアウト">
+
+  <meta itemprop="image" content="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png">
+
+
+    <meta property="og:title" content="星空コメントアウト">
+<meta property="og:type" content="blog">
+  <meta property="og:url" content="http://aloedev.hatenablog.com/">
+
+
+
+
+  <meta property="og:image" content="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png">
+
+  <meta property="og:description" content="ブログテーマ開発用ブログ。 For development Blog Theme.">
+<meta property="og:site_name" content="星空コメントアウト">
+
+        <meta name="twitter:card" content="summary">  <meta name="twitter:title" content="星空コメントアウト">  <meta name="twitter:description" content="ブログテーマ開発用ブログ。 For development Blog Theme.">  <meta name="twitter:app:name:iphone" content="はてなブログアプリ">
+  <meta name="twitter:app:id:iphone" content="583299321">
+  <meta name="twitter:app:url:iphone" content="hatenablog:///open?uri=http%3A%2F%2Faloedev.hatenablog.com%2Fpreview%2Findex_design">  <meta name="twitter:site" content="@aloerina_">
+
+
+
+
+<script id="facebook-jssdk" src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&amp;appId=719729204785177&amp;version=v2.7"></script><script async="" type="text/javascript" src="//www.googletagservices.com/tag/js/gpt.js"></script><script async="" type="text/javascript" src="//hatena-d.openx.net/w/1.0/jstag?nc=4374287-hatena.ne.jp"></script><script async="" type="text/javascript" src="http://cnt.fout.jp/segapi/audience?cvid=mstR6EjxHmpIV1QDzg&amp;callback=hatenadfp.displayAdsWithSegmentSync"></script><script src="https://pagead2.googlesyndication.com/pub-config/r20160601/ca-pub-4438296558807254.js"></script><script type="text/javascript">
+// <!--
+
+if (~navigator.userAgent.indexOf('Mac OS X')) {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27ヒラギノ角ゴ Pro W3\x27, \x27Hiragino Kaku Gothic Pro\x27, sans-serif; } </style>');
+} else {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27メイリオ\x27, \x27Meiryo\x27, \x27MS PGothic\x27, sans-serif; } </style>');
+}
+
+// -->
+</script><style type="text/css">html, body { font-family: 'Helvetica', 'Arial', 'メイリオ', 'Meiryo', 'MS PGothic', sans-serif; } </style>
+
+
+
+
+    <link rel="shortcut icon" href="//cdn.blog.st-hatena.com/images/favicon.ico">
+<link rel="icon" sizes="192x192" href="//cdn.blog.st-hatena.com/images/common/meta-icon-global.png">
+
+
+<link rel="alternate" type="application/atom+xml" title="Atom" href="http://aloedev.hatenablog.com/feed">
+<link rel="alternate" type="application/rss+xml" title="RSS2.0" href="http://aloedev.hatenablog.com/rss">
+
+
+      <link rel="author" href="http://www.hatena.ne.jp/cocoro27/">
+
+
+    <link rel="stylesheet" type="text/css" href="//cdn.blog.st-hatena.com/css/blog.css?version=1e5d0a51152133e81b9215709db77a50">
+    <link rel="stylesheet" href="../css/one-fine-day.css">
+
+  <style>
+    /* <system section="theme" selected="evergreen"> */
+@import url('//cdn.blog.st-hatena.com/css/theme/evergreen/evergreen.css?version=1e5d0a51152133e81b9215709db77a50');
+/* </system> */
+
+@charset "utf-8";
+/*
+  Theme: boilerplate
+  Author: Hatena Blog Team
+  Description:
+    はてなブログのデザインCSSカスタマイズの土台に適したデザインテーマです。
+    このテーマをもとにしてCSSを書くと比較的楽にカスタマイズできます。
+    特定の部分（例えば記事本文の書式やコメント欄のスタイルなど）だけをコピーして使ってもかまいません。
+    もちろんそのままの状態でも、シンプルなテーマとして使うことができます。
+    このCSSおよびLESSファイルは自由に複製・再配布できます。
+    このテーマをもとにしたデザインテーマの配布も自由です。
+
+  Licensed under the MIT license.
+*/
+/*  import normalize */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+
+}
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+
+  vertical-align: baseline;
+  /* 2 */
+
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+
+  font: inherit;
+  /* 2 */
+
+  margin: 0;
+  /* 3 */
+
+}
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+
+  cursor: pointer;
+  /* 3 */
+
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+
+  box-sizing: content-box;
+}
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+/*  import mixin */
+.clearfix {
+  display: block;
+  *zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+.inline-block {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/*  import variable */
+/* Common */
+html,
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic', sans-serif;
+  color: #454545;
+  background-color: #ffffff;
+}
+a {
+  color: #1487bd;
+}
+a:hover {
+  color: #0f5373;
+}
+a:visited {
+  color: #789dae;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #333333;
+  text-decoration: none;
+}
+a.keyword {
+  text-decoration: none;
+  border-bottom: 1px dotted #dddddd;
+  color: #454545;
+}
+/* Buttons */
+.btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 4px 10px 4px;
+  margin-bottom: 0;
+  line-height: 18px;
+  color: #454545;
+  background-color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-radius: 2px;
+  background-clip: padding-box;
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-decoration: none !important;
+}
+.btn:hover {
+  background-color: #f5f5f5;
+  text-decoration: none !important;
+}
+.btn-small {
+  padding: 2px 10px !important;
+  font-size: 11px !important;
+}
+.btn-large {
+  padding: 13px 19px;
+  font-size: 17px;
+  line-height: normal;
+  font-weight: bold;
+}
+/* ヘッダ（グローバルヘッダ）
+  グローバルヘッダの中はiframeですが、
+  #globalheader-container に背景色や文字色を指定することでirameの中にも色が反映されます。
+*/
+#globalheader-container {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* container */
+#container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-top: 37px;
+}
+#container #content {
+  display: block;
+  *zoom: 1;
+}
+#container #content:after {
+  display: block;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+.globalheader-off #container {
+  padding-top: 0;
+}
+/* 2カラムレイアウト */
+#main {
+  width: 600px;
+  float: left;
+}
+#box2 {
+  width: 300px;
+  float: right;
+}
+/* 1カラムにしたい場合は下記のコメントアウトを外してください ----
+
+#main {
+    width: 100%;
+    float: none;
+}
+
+#box2 {
+    width: 100%;
+    float: none;
+}
+
+#box2-inner {
+    width: 960px;
+    .clearfix;
+    overflow: hidden;
+}
+
+.hatena-module {
+    text-align: left;
+    padding-right: 20px;
+    width: 300px;
+    float: left;
+
+    &:nth-child(3n+1) {
+        clear: both;
+    }
+}
+
+---- END 1カラム */
+/* header */
+#blog-title {
+  margin: 30px 0;
+  padding: 20px 0;
+}
+#title {
+  margin: 0;
+}
+#title a {
+  color: #454545;
+}
+#blog-description {
+  font-weight: normal;
+  font-size: 80%;
+  margin: 5px 0 0 0;
+}
+/* ヘッダ画像を設定したとき */
+.header-image-enable #title {
+  padding-top: 70px;
+}
+.header-image-enable #title,
+.header-image-enable #blog-description {
+  padding-left: 20px;
+}
+/* パンくず（カテゴリーページで表示されます） */
+#top-box {
+  margin: 10px auto 20px;
+  font-size: 90%;
+}
+#top-box .breadcrumb {
+  border: 1px solid #dddddd;
+  padding: 10px;
+}
+/* entry */
+.entry {
+  position: relative;
+  margin-bottom: 100px;
+}
+.entry-header {
+  padding: 0 0 10px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dddddd;
+  position: relative;
+}
+.entry-title {
+  margin: 0;
+  line-height: 1.3;
+  font-size: 160%;
+}
+/* 日付 */
+.date {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.date a {
+  color: #1487bd;
+  text-decoration: none;
+  font-size: 90%;
+}
+/* カテゴリ */
+.categories {
+  margin-top: 10px;
+  font-size: 80%;
+}
+.categories a {
+  color: #999999;
+}
+.categories.no-categories {
+  margin: 0;
+}
+/* 「編集する」ボタン */
+.entry-header-menu {
+  position: absolute;
+  bottom: 0px;
+  left: -60px;
+}
+.entry-header-menu a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 4px 10px 4px;
+  margin-bottom: 0;
+  line-height: 18px;
+  color: #454545;
+  background-color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-radius: 2px;
+  background-clip: padding-box;
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-decoration: none !important;
+}
+.entry-header-menu a:hover {
+  background-color: #f5f5f5;
+  text-decoration: none !important;
+}
+/* entry-content の中の書式 */
+.entry-content {
+  font-size: 95%;
+  line-height: 1.7;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+.entry-content p {
+  margin: 0 0 1em 0;
+}
+.entry-content img {
+  max-width: 100%;
+}
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+  margin: 1.3em 0 0.8em 0;
+  line-height: 1.5;
+}
+.entry-content h1 {
+  font-size: 160%;
+}
+.entry-content h2 {
+  font-size: 150%;
+}
+.entry-content h3 {
+  font-size: 140%;
+}
+.entry-content h4 {
+  font-size: 130%;
+}
+.entry-content h5 {
+  font-size: 110%;
+}
+.entry-content h6 {
+  font-size: 100%;
+}
+.entry-content table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1em;
+}
+.entry-content table img {
+  max-width: none;
+}
+.entry-content table th,
+.entry-content table td {
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+}
+.entry-content table th {
+  background: #f5f5f5;
+}
+.entry-content blockquote {
+  border: 1px solid #dddddd;
+  margin: 0 0 10px;
+  padding: 20px;
+}
+.entry-content blockquote p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.entry-content pre {
+  border: 1px solid #dddddd;
+  margin: 0 0 10px;
+  padding: 20px;
+  white-space: pre;
+}
+.entry-content pre > code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: 0;
+  background: transparent;
+  font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+}
+.entry-content code {
+  font-size: 90%;
+  margin: 0 2px;
+  padding: 0 5px;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+}
+.entry-content .hatena-asin-detail li {
+  line-height: 1.4;
+}
+/* entry-footer */
+.entry-footer {
+  margin-top: 10px;
+}
+.entry-footer-section {
+  font-size: 80%;
+  color: #999999;
+}
+.entry-footer-section a {
+  color: #999999;
+}
+.social-buttons,
+.entry-footer-html {
+  margin: 10px 0;
+}
+/* コメント */
+.comment-box ul {
+  list-style: none;
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-size: 95%;
+  line-height: 1.7;
+}
+.comment-box li {
+  padding: 10px 0 10px 60px;
+  border-bottom: 1px solid #dddddd;
+  position: relative;
+}
+.comment-box li:first-child {
+  border-top: 1px solid #dddddd;
+}
+.comment-box .read-more-comments {
+  padding-left: 0;
+}
+.comment-box .hatena-id-icon {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 50px !important;
+  height: 50px !important;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-radius: 3px;
+  background-clip: padding-box;
+}
+.comment-user-name {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+.comment-content {
+  font-size: 90%;
+  margin: 0 0 10px 0;
+  word-wrap: break-word;
+}
+.comment-content p {
+  margin: 0 0 10px 0;
+}
+.comment-metadata {
+  font-size: 80%;
+  color: #999999;
+  margin: 0;
+}
+.comment-metadata a {
+  color: #999999;
+}
+.leave-comment-title {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 4px 10px 4px;
+  margin-bottom: 0;
+  line-height: 18px;
+  color: #454545;
+  background-color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-radius: 2px;
+  background-clip: padding-box;
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-decoration: none !important;
+}
+.leave-comment-title:hover {
+  background-color: #f5f5f5;
+  text-decoration: none !important;
+}
+/* sidebar */
+#box2 {
+  font-size: 85%;
+  line-height: 1.5;
+}
+.hatena-module {
+  margin-bottom: 60px;
+}
+.hatena-module-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 120%;
+}
+.hatena-module-title a {
+  color: #454545;
+  text-decoration: none;
+}
+.hatena-module-title a:hover {
+  text-decoration: underline;
+}
+/* Profile module */
+.hatena-module-profile .profile-icon {
+  float: left;
+  margin: 0 10px 10px 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+.hatena-module-profile .id {
+  display: block;
+  font-weight: bold;
+  font-size: 110%;
+  margin-bottom: 5px;
+}
+.hatena-module-profile .profile-description {
+  font-size: 90%;
+}
+.hatena-module-profile .profile-description p {
+  margin-top: 0;
+}
+/* urllist module
+    リンク・最新記事・最近のコメント・月別アーカイブ・カテゴリモジュールは .hatena-urllist という共通の class が振られます
+*/
+.hatena-urllist {
+  list-style: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+.hatena-urllist li {
+  padding: 8px 0;
+  border-bottom: 1px solid #dddddd;
+  line-height: 1.5;
+}
+.hatena-urllist li a {
+  text-decoration: none;
+}
+/* Search module */
+.hatena-module-search-box .search-form {
+  border: 1px solid #dddddd;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-radius: 3px;
+  background-clip: padding-box;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+.hatena-module-search-box .search-module-input {
+  padding: 5px;
+  color: #454545;
+  background: none;
+  border: none;
+  outline: none;
+  height: 20px;
+  width: 90%;
+}
+.hatena-module-search-box .search-module-button {
+  width: 20px;
+  height: 20px;
+  background: transparent url(http://blog.hatena.ne.jp/images/theme/search.png) no-repeat right center;
+  border: none;
+  outline: none;
+  text-indent: -9999px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 0.5;
+}
+.hatena-module-search-box .search-module-button:hover {
+  opacity: 0.85;
+}
+/* Pager */
+.pager {
+  margin: 1em 0;
+  display: block;
+  *zoom: 1;
+}
+.pager:after {
+  display: block;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+.pager .pager-prev {
+  float: left;
+  text-align: left;
+  width: 45%;
+}
+.pager .pager-next {
+  float: right;
+  text-align: right;
+  width: 45%;
+}
+/* Footer */
+#footer {
+  padding: 30px 0;
+  text-align: center;
+  color: #999999;
+  line-height: 1.5;
+  font-size: 80%;
+}
+#footer p {
+  margin: 0;
+}
+#footer a {
+  color: #999999;
+}
+/* About ページ */
+.page-about dt {
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 5px;
+}
+.page-about dd {
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+/* archive ページ */
+.page-archive .archive-entries .archive-entry {
+  margin-bottom: 3em;
+}
+.page-archive .archive-entries .entry-title {
+  font-size: 130%;
+  margin: 0 0 .5em;
+}
+.page-archive .archive-entries .categories {
+  margin: 0 0 .5em;
+}
+.page-archive .archive-entries .entry-description {
+  margin: 0 0 1em;
+  line-height: 1.7em;
+  font-size: 95%;
+}
+.page-archive .categories a {
+  color: #fff;
+  font-size: 70%;
+  background: #aaa;
+  padding: 3px 5px;
+  border-radius: 3px;
+  text-decoration: none;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-right: 2px;
+}
+/*  import media queries */
+/* Media Queries - Retina Display */
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .hatena-module-search-box .search-module-button {
+    background: transparent url(http://blog.hatena.ne.jp/images/theme/search@2x.png) no-repeat right center;
+    background-size: 20px 20px;
+  }
+}
+/* Media Queries - Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #container {
+    width: 724px;
+  }
+  #main {
+    width: 460px;
+  }
+  #box2 {
+    width: 245px;
+  }
+  /* 1カラムにしたい場合は下記のコメントアウトを外してください ----
+      #main,
+      #box2 {
+          width: 100%;
+      }
+
+      #box2-inner {
+          width: 744px;
+
+      }
+
+      .hatena-module {
+          width: 228px;
+      }
+  ---- END 1カラム */
+}
+/* Media Queries - Small Tablet & Smartphone */
+@media (max-width: 767px) {
+  #globalheader-container {
+    position: static;
+  }
+  #container {
+    width: 93.75%;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+  #main {
+    width: 100%;
+    float: none;
+  }
+  #box2 {
+    width: 100%;
+    float: none;
+  }
+  #box2-inner {
+    width: 100%;
+  }
+  .hatena-module {
+    width: 100%;
+    float: none;
+  }
+  .entry-header-menu {
+    top: -30px;
+    left: 0px;
+  }
+}
+/* Media Queries - Smartphone */
+@media (max-width: 480px) {
+
+}
+  </style>
+
+    <script></script>
+
+
+<style>
+  div#google_afc_user,
+  div#google_afc_user_container_0,
+  div#google_afc_user_container_1,
+  div#google_afc_user_container_2,
+  div#google_afc_user_container_3,
+  div#google_afc_user_container_4,
+  div#google_afc_user_container_5,
+  div.google_afc_image,
+  div.google_afc_blocklink {
+      display: block !important;
+  }
+</style>
+
+
+
+  <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/button.a1287ca71ce6e06bb8d64fd87cd04244.js"></script><script src="http://partner.googleadservices.com/gpt/pubads_impl_93.js" async=""></script><link rel="prefetch" href="http://tpc.googlesyndication.com/safeframe/1-0-4/html/container.html?n=1"><script type="text/javascript" id="ox_acj_1969284801" src="http://hatena-d.openx.net/w/1.0/acj?o=1969284801&amp;callback=OX_1969284801&amp;ju=http%3A//blog.hatena.ne.jp/cocoro27/aloedev.hatenablog.com/config/design/detail&amp;jr=http%3A//blog.hatena.ne.jp/cocoro27/aloedev.hatenablog.com/config/design/detail&amp;be=1&amp;auid=538493915&amp;aus=300x250&amp;res=1280x720x24&amp;plg=swf%2Cshk%2Cpm&amp;ch=UTF-8&amp;tz=-540&amp;ws=999x507&amp;ifr=1&amp;vmt=1"></script><script type="text/javascript" id="ox_acj_2324824343" src="http://hatena-d.openx.net/w/1.0/acj?o=2324824343&amp;callback=OX_2324824343&amp;ju=http%3A//blog.hatena.ne.jp/cocoro27/aloedev.hatenablog.com/config/design/detail&amp;jr=http%3A//blog.hatena.ne.jp/cocoro27/aloedev.hatenablog.com/config/design/detail&amp;be=1&amp;auid=538493898&amp;aus=300x250&amp;res=1280x720x24&amp;plg=swf%2Cshk%2Cpm&amp;ch=UTF-8&amp;tz=-540&amp;ws=999x507&amp;ifr=1&amp;vmt=1"></script><script src="http://s.hatena.ne.jp/entries.json?uri=http%3A%2F%2Faloedev.hatenablog.com%2Fentry%2F2016%2F04%2F09%2F034458&amp;uri=http%3A%2F%2Faloedev.hatenablog.com%2Fentry%2F2016%2F04%2F03%2F010635&amp;uri=http%3A%2F%2Faloedev.hatenablog.com%2Fentry%2F2016%2F04%2F02%2F224540&amp;timestamp=1&amp;callback=Ten.JSONP.callback" type="text/javascript"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+
+  <body class="page-index header-image-enable enable-top-editarea">
+
+    <div id="header-container">
+     <div id="sp-suggest" style="display: none;"><a id="sp-suggest-link" href="#">スマートフォン用の表示で見る</a></div>
+    </div>
+
+
+
+<div class="quote-box" style="display: none;">
+  <div class="tooltip-quote tooltip-quote-star" style="display: block;">
+    <i class="blogicon-star" title="引用スターをつける"></i>
+  </div>
+  <div class="tooltip-quote tooltip-quote-stock" style="display: block;">
+    <i class="blogicon-quote" title="引用をストック"></i>
+  </div>
+  <div class="tooltip-quote tooltip-quote-tweet js-tooltip-quote-tweet" style="display: block;">
+    <a class="js-tweet-quote" target="_blank" data-track-name="quote-tweet" data-track-once=""><i class="blogicon-twitter" title="引用してツイートする"></i></a>
+  </div>
+</div>
+
+<div class="message-box" id="quote-star-message-box" style="display: none; position: absolute;">
+  スターをつけました
+</div>
+
+<div class="quote-stock-panel" id="quote-stock-message-box" style="position: absolute; z-index: 3000">
+  <div class="message-box" id="quote-stock-succeeded-message" style="display: none">
+    <p>引用をストックしました</p>
+    <button class="btn btn-primary" id="quote-stock-show-editor-button" data-track-name="curation-quote-edit-button">ストック一覧を見る</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="message-box" id="quote-login-required-message" style="display: none">
+    <p>引用するにはまずログインしてください</p>
+    <button class="btn btn-primary" id="quote-login-button">ログイン</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="quote-stock-failed-message" style="display: none">
+    <p>引用をストックできませんでした。再度お試しください</p>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="unstockable-quote-message-box" style="display: none; position: absolute; z-index: 3000;">
+    <p>限定公開記事のため引用できません。</p>
+  </div>
+</div>
+
+<script type="x-underscore-template" id="js-requote-button-template">
+  <div class="requote-button js-requote-button">
+    <button class="requote-button-btn tipsy-top" title="引用する"><i class="blogicon-quote"></i></button>
+  </div>
+</script>
+
+
+
+    <div id="globalheader-container">
+  <iframe id="globalheader" height="37" frameborder="0" allowtransparency="true"></iframe>
+</div>
+
+
+
+    <div id="hidden-subscribe-button">
+      <div class="hatena-follow-button-box btn-subscribe js-hatena-follow-button-box">
+
+  <a href="#" class="hatena-follow-button js-hatena-follow-button subscribing">
+    <span class="subscribing">
+      <span class="foreground">読者です</span>
+      <span class="background">読者をやめる</span>
+    </span>
+    <span class="unsubscribing" data-track-name="profile-widget-subscribe-button" data-track-once="">
+      <span class="foreground">読者になる</span>
+      <span class="background">読者になる</span>
+    </span>
+  </a>
+  <div class="subscription-count-box js-subscription-count-box" style="display: block;">
+    <i></i>
+    <u></u>
+    <span class="subscription-count js-subscription-count">1</span>
+  </div>
+</div>
+
+    </div>
+
+    <div id="container">
+      <div id="container-inner">
+        <header id="blog-title" data-brand="hatenablog">
+  <div id="blog-title-inner" style="background-image: url('http://cdn-ak.f.st-hatena.com/images/fotolife/c/cocoro27/20160409/20160409023815.jpg'); background-position: center -309px;">
+    <div id="blog-title-content">
+      <h1 id="title"><a href="http://aloedev.hatenablog.com/">星空コメントアウト</a></h1>
+
+        <h2 id="blog-description">ブログテーマ開発用ブログ。 For development Blog Theme.</h2>
+
+    </div>
+  </div>
+</header>
+
+
+          <div id="top-editarea">
+            <div class="custom-fixed-header">
+    <div class="header-contents">
+        <div class="header-contents-title">星空コメントアウト</div>
+        <div class="header-contents-search">Search...</div>
+    </div>
+</div>
+          </div>
+
+
+
+
+
+
+<div id="content" class="hfeed">
+  <div id="content-inner">
+    <div id="wrapper">
+      <div id="main">
+        <div id="main-inner">
+
+
+            <!-- google_ad_section_start -->
+            <!-- rakuten_ad_target_begin -->
+
+
+                <article class="entry hentry js-entry-article date-first autopagerize_page_element chars-200 words-100 mode-html entry-odd" id="entry-10328537792370376619" data-keyword-campaign="" data-uuid="10328537792370376619">
+  <div class="entry-inner">
+    <header class="entry-header">
+      <div class="entry-date date first">
+        <a href="http://aloedev.hatenablog.com/entries/2016/04/09" rel="nofollow">
+          <time pubdate="" datetime="2016-04-08T18:44:58Z" title="2016-04-08T18:44:58Z">
+            <span class="date-year">2016</span><span class="hyphen">-</span><span class="date-month">04</span><span class="hyphen">-</span><span class="date-day">09</span>
+          </time>
+        </a>
+      </div>
+      <h1 class="entry-title">
+        <a href="http://aloedev.hatenablog.com/entry/2016/04/09/034458" class="entry-title-link bookmark">見出しテスト</a>
+      </h1>
+
+
+
+        <div class="entry-categories categories">
+
+          <a href="http://aloedev.hatenablog.com/archive/category/%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB">サンプル</a>
+
+        </div>
+
+
+
+
+    </header>
+
+    <div class="entry-content">
+
+
+        <ul class="table-of-contents">
+    <li>大見出し<ul>
+            <li>中見出し</li>
+            <li>中見出し<ul>
+                    <li><a class="keyword" href="http://d.hatena.ne.jp/keyword/%BE%AE%B8%AB%BD%D0%A4%B7">小見出し</a></li>
+                    <li><a class="keyword" href="http://d.hatena.ne.jp/keyword/%BE%AE%B8%AB%BD%D0%A4%B7">小見出し</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>大見出し<ul>
+            <li>中見出し<ul>
+                    <li><a class="keyword" href="http://d.hatena.ne.jp/keyword/%BE%AE%B8%AB%BD%D0%A4%B7">小見出し</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<h3>大見出し</h3>
+<h4>中見出し</h4>
+<p>コンテンツ</p>
+<p>コンテンツ</p>
+<p>コンテンツ</p>
+<p>&nbsp;</p>
+<h4>中見出し</h4>
+<h5><a class="keyword" href="http://d.hatena.ne.jp/keyword/%BE%AE%B8%AB%BD%D0%A4%B7">小見出し</a></h5>
+<p>コンテンツコンテンツ</p>
+<h5><a class="keyword" href="http://d.hatena.ne.jp/keyword/%BE%AE%B8%AB%BD%D0%A4%B7">小見出し</a></h5>
+<p>コンテンツ</p>
+
+          <a class="entry-see-more" href="http://aloedev.hatenablog.com/entry/2016/04/09/034458">続きを読む</a>
+
+
+    </div>
+    <footer class="entry-footer">
+      <p class="entry-footer-section">
+        <span class="author vcard"><span class="fn" data-load-nickname="1" data-user-name="cocoro27"><span class="user-name-nickname">あろえりーな</span> <span class="user-name-paren">(</span><span class="user-name-hatena-id">id:cocoro27</span><span class="user-name-paren">)</span></span></span>
+        <span class="entry-footer-time"><a href="http://aloedev.hatenablog.com/entry/2016/04/09/034458"><time data-relative="" datetime="2016-04-08T18:44:58Z" title="2016-04-08T18:44:58Z" pubdate="" class="updated">129日前</time></a></span>
+      </p>
+
+
+        <div class="hatena-star-container">
+        <span class="hatena-star-comment-container"><img src="http://s.hatena.ne.jp/images/comment.gif" tabindex="0" alt="Comments" title="Comments" class="hatena-star-comment-button" style="cursor: pointer; margin: 0px 3px; padding: 0px; border: none; vertical-align: middle; display: inline;"></span><span class="hatena-star-star-container"><img src="//cdn.blog.st-hatena.com/images/theme/star/hatena-star-add-button.png?version=1e5d0a51152133e81b9215709db77a50" tabindex="0" alt="Add Star" title="Add Star" class="hatena-star-add-button" style="cursor: pointer; margin: 0px 3px; padding: 0px; border: none; vertical-align: middle;"></span></div>
+        <div class="hatena-star-metadata" style="display: none">
+          <a class="hatena-star-permalink" href="http://aloedev.hatenablog.com/entry/2016/04/09/034458">見出しテスト</a>
+        </div>
+
+
+
+<div class="social-buttons">
+
+
+    <div class="social-button-item">
+      <iframe class="hatena-bookmark-button-frame" title="この記事をはてなブックマークに追加" frameborder="0" scrolling="no" width="80" height="60" src="javascript:false" style="width: 80px; height: 60px;"></iframe>
+    </div>
+
+
+    <div class="social-button-item">
+      <div class="fb-share-button fb_iframe_widget" data-layout="box_count" data-href="http://aloedev.hatenablog.com/entry/2016/04/09/034458" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=719729204785177&amp;container_width=0&amp;href=http%3A%2F%2Faloedev.hatenablog.com%2Fentry%2F2016%2F04%2F09%2F034458&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey"><span style="vertical-align: bottom; width: 60px; height: 61px;"><iframe name="f25f75ab7ef02fc" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" src="https://www.facebook.com/v2.7/plugins/share_button.php?app_id=719729204785177&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FLcj5EtQ5qmD.js%3Fversion%3D42%23cb%3Df3bbe79bfbb4678%26domain%3Daloedev.hatenablog.com%26origin%3Dhttp%253A%252F%252Faloedev.hatenablog.com%252Ff146286e2f22754%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2Faloedev.hatenablog.com%2Fentry%2F2016%2F04%2F09%2F034458&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey" style="border: none; visibility: visible; width: 60px; height: 61px;" class=""></iframe></span></div>
+    </div>
+
+
+    <div class="social-button-item">
+      <a href="https://twitter.com/search?q=http%3A%2F%2Faloedev.hatenablog.com%2Fentry%2F2016%2F04%2F09%2F034458" class="social-button-twitter-balloon" target="_blank">
+        <span class="social-button-twitter-balloon-list">list</span>
+        <i class="social-button-twitter-balloon-arrow-border"></i>
+        <u class="social-button-twitter-balloon-arrow"></u>
+      </a>
+      <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.d73d0c4cb6af3df0ea22b7c11dbc87d2.ja.html#dnt=false&amp;id=twitter-widget-0&amp;lang=ja&amp;original_referer=http%3A%2F%2Faloedev.hatenablog.com%2Fpreview%2Findex_design&amp;size=m&amp;text=%E8%A6%8B%E5%87%BA%E3%81%97%E3%83%86%E3%82%B9%E3%83%88%20-%20%E6%98%9F%E7%A9%BA%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E3%82%A2%E3%82%A6%E3%83%88&amp;time=1471335423844&amp;type=share&amp;url=http%3A%2F%2Faloedev.hatenablog.com%2Fentry%2F2016%2F04%2F09%2F034458" style="position: static; visibility: visible; width: 75px; height: 20px;" data-url="http://aloedev.hatenablog.com/entry/2016/04/09/034458"></iframe>
+    </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+            <div class="google-afc-image test-google-rectangle-ads blog_user_a">
+
+
+                <script>
+  var hatenadfp = hatenadfp || {};
+  hatenadfp.adUnits = hatenadfp.adUnits || [];
+  hatenadfp.adUnits.push(
+
+      { unitName: 'blog_user', size: [[300, 250], [336, 280]], divId: 'google_afc_user_container_0', allowContentMatch: true }
+
+  );
+  hatenadfp.isNGContent = false;
+
+</script>
+
+                <div id="google_afc_user_container_0" class="google_afc_blocklink2_5 google_afc_boder" data-google-query-id="CJGg5cq_xc4CFZAdvAodRaUBxA"><div id="google_ads_iframe_/4374287/blog_user_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/4374287/blog_user_0" title="3rd party ad content" name="google_ads_iframe_/4374287/blog_user_0" width="336" height="280" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe><object type="application/x-shockwave-flash" data="//pagead2.googlesyndication.com/osd/hbe.swf?id=1~0" width="1" height="1" style="visibility: hidden; opacity: 0; z-index: -999999; position: fixed; left: 292px; top: 1844.06px;"><param name="movie" value="//pagead2.googlesyndication.com/osd/hbe.swf?id=1~0"><param name="allowscriptaccess" value="always"><param name="wmode" value="opaque"></object></div><iframe id="google_ads_iframe_/4374287/blog_user_0__hidden__" title="" name="google_ads_iframe_/4374287/blog_user_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div>
+
+
+
+            </div>
+
+
+
+
+      <div class="customized-footer">
+
+
+
+      </div>
+
+      <div class="comment-box">
+
+        <ul class="comment">
+
+             <li class="read-more-comments" style="display: none;"><a>もっと読む (0)</a></li>
+
+        </ul>
+
+          <a class="leave-comment-title">コメントを書く</a>
+
+      </div>
+      <!-- enjapan ad -->
+
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+                <article class="entry hentry js-entry-article date-first autopagerize_page_element chars-200 words-100 mode-html entry-even" id="entry-10328537792369560684" data-keyword-campaign="" data-uuid="10328537792369560684">
+  <div class="entry-inner">
+    <header class="entry-header">
+      <div class="entry-date date first">
+        <a href="http://aloedev.hatenablog.com/entries/2016/04/03" rel="nofollow">
+          <time pubdate="" datetime="2016-04-02T16:06:35Z" title="2016-04-02T16:06:35Z">
+            <span class="date-year">2016</span><span class="hyphen">-</span><span class="date-month">04</span><span class="hyphen">-</span><span class="date-day">03</span>
+          </time>
+        </a>
+      </div>
+      <h1 class="entry-title">
+        <a href="http://aloedev.hatenablog.com/entry/2016/04/03/010635" class="entry-title-link bookmark">弱小ブログだけどProにしたっていいじゃない</a>
+      </h1>
+
+
+
+        <div class="entry-categories categories">
+
+          <a href="http://aloedev.hatenablog.com/archive/category/design">design</a>
+
+          <a href="http://aloedev.hatenablog.com/archive/category/%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB">サンプル</a>
+
+        </div>
+
+
+
+
+    <div class="entry-header-menu" style="display: none;"><a href="javascript:void">編集</a></div></header>
+
+    <div class="entry-content">
+
+
+        <p><img class="hatena-fotolife" title="f:id:cocoro27:20160328173314j:plain" src="http://cdn-ak.f.st-hatena.com/images/fotolife/c/cocoro27/20160328/20160328173314.jpg" alt="f:id:cocoro27:20160328173314j:plain"></p>
+<p>Proにしたんだよ！</p>
+<p>&nbsp;</p>
+<p>おわり</p>
+<p>&nbsp;</p>
+
+
+    </div>
+    <footer class="entry-footer">
+      <p class="entry-footer-section">
+        <span class="author vcard"><span class="fn" data-load-nickname="1" data-user-name="cocoro27"><span class="user-name-nickname">あろえりーな</span> <span class="user-name-paren">(</span><span class="user-name-hatena-id">id:cocoro27</span><span class="user-name-paren">)</span></span></span>
+        <span class="entry-footer-time"><a href="http://aloedev.hatenablog.com/entry/2016/04/03/010635"><time data-relative="" datetime="2016-04-02T16:06:35Z" title="2016-04-02T16:06:35Z" pubdate="" class="updated">135日前</time></a></span>
+      </p>
+
+
+        <div class="hatena-star-container">
+        <span class="hatena-star-comment-container"><img src="http://s.hatena.ne.jp/images/comment.gif" tabindex="0" alt="Comments" title="Comments" class="hatena-star-comment-button" style="cursor: pointer; margin: 0px 3px; padding: 0px; border: none; vertical-align: middle; display: inline;"></span><span class="hatena-star-star-container"><img src="//cdn.blog.st-hatena.com/images/theme/star/hatena-star-add-button.png?version=1e5d0a51152133e81b9215709db77a50" tabindex="0" alt="Add Star" title="Add Star" class="hatena-star-add-button" style="cursor: pointer; margin: 0px 3px; padding: 0px; border: none; vertical-align: middle;"></span></div>
+        <div class="hatena-star-metadata" style="display: none">
+          <a class="hatena-star-permalink" href="http://aloedev.hatenablog.com/entry/2016/04/03/010635">弱小ブログだけどProにしたっていいじゃない</a>
+        </div>
+
+
+
+<div class="social-buttons">
+
+
+    <div class="social-button-item">
+      <iframe class="hatena-bookmark-button-frame" title="この記事をはてなブックマークに追加" frameborder="0" scrolling="no" width="80" height="60" src="javascript:false" style="width: 80px; height: 60px;"></iframe>
+    </div>
+
+
+    <div class="social-button-item">
+      <div class="fb-share-button fb_iframe_widget" data-layout="box_count" data-href="http://aloedev.hatenablog.com/entry/2016/04/03/010635" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=719729204785177&amp;container_width=0&amp;href=http%3A%2F%2Faloedev.hatenablog.com%2Fentry%2F2016%2F04%2F03%2F010635&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey"><span style="vertical-align: bottom; width: 60px; height: 61px;"><iframe name="f3932c097d6c808" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" src="https://www.facebook.com/v2.7/plugins/share_button.php?app_id=719729204785177&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FLcj5EtQ5qmD.js%3Fversion%3D42%23cb%3Df31fde10fee7ca4%26domain%3Daloedev.hatenablog.com%26origin%3Dhttp%253A%252F%252Faloedev.hatenablog.com%252Ff146286e2f22754%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2Faloedev.hatenablog.com%2Fentry%2F2016%2F04%2F03%2F010635&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey" style="border: none; visibility: visible; width: 60px; height: 61px;" class=""></iframe></span></div>
+    </div>
+
+
+    <div class="social-button-item">
+      <a href="https://twitter.com/search?q=http%3A%2F%2Faloedev.hatenablog.com%2Fentry%2F2016%2F04%2F03%2F010635" class="social-button-twitter-balloon" target="_blank">
+        <span class="social-button-twitter-balloon-list">list</span>
+        <i class="social-button-twitter-balloon-arrow-border"></i>
+        <u class="social-button-twitter-balloon-arrow"></u>
+      </a>
+      <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.d73d0c4cb6af3df0ea22b7c11dbc87d2.ja.html#dnt=false&amp;id=twitter-widget-1&amp;lang=ja&amp;original_referer=http%3A%2F%2Faloedev.hatenablog.com%2Fpreview%2Findex_design&amp;size=m&amp;text=%E5%BC%B1%E5%B0%8F%E3%83%96%E3%83%AD%E3%82%B0%E3%81%A0%E3%81%91%E3%81%A9Pro%E3%81%AB%E3%81%97%E3%81%9F%E3%81%A3%E3%81%A6%E3%81%84%E3%81%84%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%20-%20%E6%98%9F%E7%A9%BA%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E3%82%A2%E3%82%A6%E3%83%88&amp;time=1471335423846&amp;type=share&amp;url=http%3A%2F%2Faloedev.hatenablog.com%2Fentry%2F2016%2F04%2F03%2F010635" style="position: static; visibility: visible; width: 75px; height: 20px;" data-url="http://aloedev.hatenablog.com/entry/2016/04/03/010635"></iframe>
+    </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+          <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display: block; height: 50px;" data-ad-client="ca-pub-4438296558807254" data-ad-slot="4370884664" data-ad-format="horizontal" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:50px;margin:0;padding:0;position:relative;visibility:visible;width:460px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:50px;margin:0;padding:0;position:relative;visibility:visible;width:460px;background-color:transparent"><iframe width="460" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+      <div class="customized-footer">
+
+
+
+      </div>
+
+      <div class="comment-box">
+
+        <ul class="comment">
+
+             <li class="read-more-comments" style="display: none;"><a>もっと読む (0)</a></li>
+
+        </ul>
+
+          <a class="leave-comment-title">コメントを書く</a>
+
+      </div>
+      <!-- enjapan ad -->
+
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+                <article class="entry hentry js-entry-article date-first autopagerize_page_element chars-2400 words-100 mode-hatena entry-odd" id="entry-10328537792369543367" data-keyword-campaign="" data-uuid="10328537792369543367">
+  <div class="entry-inner">
+    <header class="entry-header">
+      <div class="entry-date date first">
+        <a href="http://aloedev.hatenablog.com/entries/2016/04/02" rel="nofollow">
+          <time pubdate="" datetime="2016-04-02T13:45:40Z" title="2016-04-02T13:45:40Z">
+            <span class="date-year">2016</span><span class="hyphen">-</span><span class="date-month">04</span><span class="hyphen">-</span><span class="date-day">02</span>
+          </time>
+        </a>
+      </div>
+      <h1 class="entry-title">
+        <a href="http://aloedev.hatenablog.com/entry/2016/04/02/224540" class="entry-title-link bookmark">sample サンプル</a>
+      </h1>
+
+
+
+        <div class="entry-categories categories">
+
+          <a href="http://aloedev.hatenablog.com/archive/category/%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB">サンプル</a>
+
+          <a href="http://aloedev.hatenablog.com/archive/category/%E3%83%AC%E3%82%B7%E3%83%94">レシピ</a>
+
+          <a href="http://aloedev.hatenablog.com/archive/category/design">design</a>
+
+        </div>
+
+
+
+
+    </header>
+
+    <div class="entry-content">
+
+
+
+<div class="section">
+    <h4>段落</h4>
+    <p>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。</p><p>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。</p>
+
+</div>
+<div class="section">
+    <h4><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%A9%A5%C8%A5%E9%A5%A4%A5%D5">フォトライフ</a></h4>
+
+<div class="section">
+    <h5>左</h5>
+    <p><span itemscope="" itemtype="http://schema.org/Photograph"><a href="http://f.hatena.ne.jp/hatenablog/20101106100658" class="hatena-fotolife" itemprop="url"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20101106/20101106100658.jpg" alt="f:id:hatenablog:20101106100658j:image:w300:left" title="f:id:hatenablog:20101106100658j:image:w300:left" class="hatena-fotolife hatena-image-left" style="width:300px" itemprop="image"></a></span>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。<br>
+<br style="clear:both"><br>
+</p>
+
+</div>
+<div class="section">
+    <h5>右</h5>
+    <p><span itemscope="" itemtype="http://schema.org/Photograph"><a href="http://f.hatena.ne.jp/hatenablog/20101106100658" class="hatena-fotolife" itemprop="url"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20101106/20101106100658.jpg" alt="f:id:hatenablog:20101106100658j:image:w300:right" title="f:id:hatenablog:20101106100658j:image:w300:right" class="hatena-fotolife hatena-image-right" style="width:300px" itemprop="image"></a></span>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。<br>
+<br style="clear:both"><br>
+</p>
+
+</div>
+<div class="section">
+    <h5>ブロック</h5>
+    <p><span itemscope="" itemtype="http://schema.org/Photograph"><a href="http://f.hatena.ne.jp/hatenablog/20101106100658" class="hatena-fotolife" itemprop="url"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20101106/20101106100658.jpg" alt="f:id:hatenablog:20101106100658j:image:w300" title="f:id:hatenablog:20101106100658j:image:w300" class="hatena-fotolife" style="width:300px" itemprop="image"></a></span>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。</p>
+
+</div>
+<div class="section">
+    <h5>大きい画像</h5>
+    <p><span itemscope="" itemtype="http://schema.org/Photograph"><a href="http://f.hatena.ne.jp/hatenablog/20101106100658" class="hatena-fotolife" itemprop="url"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20101106/20101106100658.jpg" alt="f:id:hatenablog:20101106100658j:image" title="f:id:hatenablog:20101106100658j:image" class="hatena-fotolife" itemprop="image"></a></span>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。</p>
+
+</div>
+<div class="section">
+    <h5>罫線</h5>
+    <p></p><hr><p></p><p></p><h1>h1見出し</h1><p>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。<br>ABCDEFGHIJKLMabcdefghijklm1234567890</p><p></p><p></p><h2>h2見出し</h2><p>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。<br>ABCDEFGHIJKLMabcdefghijklm1234567890</p><p></p>
+
+</div>
+</div>
+<div class="section">
+    <h3>h3見出し（*）</h3>
+    <p>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。<br>
+ABCDEFGHIJKLMabcdefghijklm1234567890</p>
+
+<div class="section">
+    <h4>h4見出し（**）</h4>
+    <p>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。<br>
+ABCDEFGHIJKLMabcdefghijklm1234567890</p>
+
+<div class="section">
+    <h5>h5見出し（***）</h5>
+    <p>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。<br>
+ABCDEFGHIJKLMabcdefghijklm1234567890</p><p></p><h6>h6見出し</h6><p>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。<br>ABCDEFGHIJKLMabcdefghijklm1234567890</p><p></p>
+
+</div>
+</div>
+<div class="section">
+    <h4>asin</h4>
+    <p>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。</p><div class="hatena-asin-detail"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4798110523/hatena-blog-22/"><img src="http://ecx.images-amazon.com/images/I/51CEFZGYJVL._SL160_.jpg" class="hatena-asin-detail-image" alt="「へんな会社」のつくり方 (NT2X)" title="「へんな会社」のつくり方 (NT2X)"></a><div class="hatena-asin-detail-info"><p class="hatena-asin-detail-title"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4798110523/hatena-blog-22/">「へんな会社」のつくり方 (NT2X)</a></p><ul><li><span class="hatena-asin-detail-label">作者:</span> <a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E1%C6%A3%BD%DF%CC%E9">近藤淳也</a></li><li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a class="keyword" href="http://d.hatena.ne.jp/keyword/%E6%C6%B1%CB%BC%D2">翔泳社</a></li><li><span class="hatena-asin-detail-label">発売日:</span> 2006/02/13</li><li><span class="hatena-asin-detail-label">メディア:</span> 単行本</li><li><span class="hatena-asin-detail-label">購入</span>: 62人 <span class="hatena-asin-detail-label">クリック</span>: 1,985回</li><li><a href="http://d.hatena.ne.jp/asin/4798110523/hatena-blog-22" target="_blank">この商品を含むブログ (1101件) を見る</a></li></ul></div><div class="hatena-asin-detail-foot"></div></div>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。<p></p>
+
+</div>
+<div class="section">
+    <h4>引用</h4>
+
+    <blockquote cite="http://d.hatena.ne.jp/hatenadiary/20071112/1194858362">
+        <p>本日（11月12日）から11月27日まで、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%CF%A4%C6%A4%CA%A5%C0%A5%A4%A5%A2%A5%EA%A1%BC">はてなダイアリー</a>の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B8%F8%B3%AB%A5%C7%A5%B6%A5%A4%A5%F3">公開デザイン</a>コンテスト「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B8%F8%B3%AB%A5%C7%A5%B6%A5%A4%A5%F3%BA%D72007%BD%A9">公開デザイン祭2007秋</a>」を開催します。</p>
+
+        <cite><a href="http://d.hatena.ne.jp/hatenadiary/20071112/1194858362">「公開デザイン祭2007秋」を開始しました - はてなダイアリー日記</a></cite>
+    </blockquote>
+
+</div>
+<div class="section">
+    <h4>リスト（ul,ol,dl）</h4>
+    <p>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。</p>
+
+<ul>
+<li>大賞1名：<a class="keyword" href="http://d.hatena.ne.jp/keyword/Amazon%A5%AE%A5%D5%A5%C8%B7%F4">Amazonギフト券</a>5万円分</li>
+<li>入選9名：<a class="keyword" href="http://d.hatena.ne.jp/keyword/Amazon%A5%AE%A5%D5%A5%C8%B7%F4">Amazonギフト券</a>1万円分
+<ul>
+<li>大賞1名：<a class="keyword" href="http://d.hatena.ne.jp/keyword/Amazon%A5%AE%A5%D5%A5%C8%B7%F4">Amazonギフト券</a>5万円分</li>
+<li>入選9名：<a class="keyword" href="http://d.hatena.ne.jp/keyword/Amazon%A5%AE%A5%D5%A5%C8%B7%F4">Amazonギフト券</a>1万円分</li>
+</ul></li>
+</ul><p>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。</p>
+
+<ol>
+<li>大賞1名：<a class="keyword" href="http://d.hatena.ne.jp/keyword/Amazon%A5%AE%A5%D5%A5%C8%B7%F4">Amazonギフト券</a>5万円分</li>
+<li>入選9名：<a class="keyword" href="http://d.hatena.ne.jp/keyword/Amazon%A5%AE%A5%D5%A5%C8%B7%F4">Amazonギフト券</a>1万円分
+<ol>
+<li>大賞1名：<a class="keyword" href="http://d.hatena.ne.jp/keyword/Amazon%A5%AE%A5%D5%A5%C8%B7%F4">Amazonギフト券</a>5万円分</li>
+<li>入選9名：<a class="keyword" href="http://d.hatena.ne.jp/keyword/Amazon%A5%AE%A5%D5%A5%C8%B7%F4">Amazonギフト券</a>1万円分</li>
+</ol></li>
+</ol><p>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。</p>
+
+<dl>
+<dt>大賞1名</dt>
+<dd><a class="keyword" href="http://d.hatena.ne.jp/keyword/Amazon%A5%AE%A5%D5%A5%C8%B7%F4">Amazonギフト券</a>5万円分</dd>
+<dt>入選9名</dt>
+<dd><a class="keyword" href="http://d.hatena.ne.jp/keyword/Amazon%A5%AE%A5%D5%A5%C8%B7%F4">Amazonギフト券</a>1万円分</dd>
+</dl>
+</div>
+<div class="section">
+    <h4>テーブル</h4>
+    <p>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。</p>
+
+<table>
+    <tbody><tr>
+    <th>名前</th>
+    <th>色</th>
+    <th>個数</th>
+    </tr>
+    <tr>
+    <td>りんご</td>
+    <td>赤</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td>みかん</td>
+    <td>だいだい</td>
+    <td>2</td>
+    </tr>
+</tbody></table><p>あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。</p>
+
+</div>
+<div class="section">
+    <h4>PRE</h4>
+    <pre class="code lang-css" data-lang="css" data-unlink=""><span class="synIdentifier">.XXX</span> <span class="synIdentifier">{</span>
+  <span class="synType">width</span>:<span class="synConstant">999px</span>;
+  <span class="synType">height</span>:<span class="synConstant">999px</span>;
+<span class="synIdentifier">}</span>
+
+<span class="synIdentifier">.propA</span>, <span class="synIdentifier">.propB</span>, <span class="synIdentifier">.propC</span> <span class="synIdentifier">{</span>
+  <span class="synType">width</span>:<span class="synConstant">999px</span>;
+  <span class="synType">height</span>:<span class="synConstant">999px</span>;
+<span class="synIdentifier">}</span>
+
+<span class="synIdentifier">#YYY</span> <span class="synIdentifier">{</span>
+  <span class="synType">width</span>:<span class="synConstant">9px</span>;
+  <span class="synType">height</span>:<span class="synConstant">999px</span>;
+<span class="synIdentifier">}</span>
+</pre>
+</div>
+</div>
+
+
+    </div>
+    <footer class="entry-footer">
+      <p class="entry-footer-section">
+        <span class="author vcard"><span class="fn" data-load-nickname="1" data-user-name="cocoro27"><span class="user-name-nickname">あろえりーな</span> <span class="user-name-paren">(</span><span class="user-name-hatena-id">id:cocoro27</span><span class="user-name-paren">)</span></span></span>
+        <span class="entry-footer-time"><a href="http://aloedev.hatenablog.com/entry/2016/04/02/224540"><time data-relative="" datetime="2016-04-02T13:45:40Z" title="2016-04-02T13:45:40Z" pubdate="" class="updated">135日前</time></a></span>
+      </p>
+
+
+        <div class="hatena-star-container">
+        <span class="hatena-star-comment-container"><img src="http://s.hatena.ne.jp/images/comment.gif" tabindex="0" alt="Comments" title="Comments" class="hatena-star-comment-button" style="cursor: pointer; margin: 0px 3px; padding: 0px; border: none; vertical-align: middle; display: inline;"></span><span class="hatena-star-star-container"><img src="//cdn.blog.st-hatena.com/images/theme/star/hatena-star-add-button.png?version=1e5d0a51152133e81b9215709db77a50" tabindex="0" alt="Add Star" title="Add Star" class="hatena-star-add-button" style="cursor: pointer; margin: 0px 3px; padding: 0px; border: none; vertical-align: middle;"></span></div>
+        <div class="hatena-star-metadata" style="display: none">
+          <a class="hatena-star-permalink" href="http://aloedev.hatenablog.com/entry/2016/04/02/224540">sample サンプル</a>
+        </div>
+
+
+
+<div class="social-buttons">
+
+
+    <div class="social-button-item">
+      <iframe class="hatena-bookmark-button-frame" title="この記事をはてなブックマークに追加" frameborder="0" scrolling="no" width="80" height="60" src="javascript:false" style="width: 80px; height: 60px;"></iframe>
+    </div>
+
+
+    <div class="social-button-item">
+      <div class="fb-share-button fb_iframe_widget" data-layout="box_count" data-href="http://aloedev.hatenablog.com/entry/2016/04/02/224540" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=719729204785177&amp;container_width=0&amp;href=http%3A%2F%2Faloedev.hatenablog.com%2Fentry%2F2016%2F04%2F02%2F224540&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey"><span style="vertical-align: bottom; width: 60px; height: 61px;"><iframe name="f6aada9bf02ec" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" src="https://www.facebook.com/v2.7/plugins/share_button.php?app_id=719729204785177&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FLcj5EtQ5qmD.js%3Fversion%3D42%23cb%3Df34ef23a3c1f004%26domain%3Daloedev.hatenablog.com%26origin%3Dhttp%253A%252F%252Faloedev.hatenablog.com%252Ff146286e2f22754%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2Faloedev.hatenablog.com%2Fentry%2F2016%2F04%2F02%2F224540&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey" style="border: none; visibility: visible; width: 60px; height: 61px;" class=""></iframe></span></div>
+    </div>
+
+
+    <div class="social-button-item">
+      <a href="https://twitter.com/search?q=http%3A%2F%2Faloedev.hatenablog.com%2Fentry%2F2016%2F04%2F02%2F224540" class="social-button-twitter-balloon" target="_blank">
+        <span class="social-button-twitter-balloon-list">list</span>
+        <i class="social-button-twitter-balloon-arrow-border"></i>
+        <u class="social-button-twitter-balloon-arrow"></u>
+      </a>
+      <iframe id="twitter-widget-2" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.d73d0c4cb6af3df0ea22b7c11dbc87d2.ja.html#dnt=false&amp;id=twitter-widget-2&amp;lang=ja&amp;original_referer=http%3A%2F%2Faloedev.hatenablog.com%2Fpreview%2Findex_design&amp;size=m&amp;text=sample%20%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%20-%20%E6%98%9F%E7%A9%BA%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E3%82%A2%E3%82%A6%E3%83%88&amp;time=1471335423846&amp;type=share&amp;url=http%3A%2F%2Faloedev.hatenablog.com%2Fentry%2F2016%2F04%2F02%2F224540" style="position: static; visibility: visible; width: 75px; height: 20px;" data-url="http://aloedev.hatenablog.com/entry/2016/04/02/224540"></iframe>
+    </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+            <div class="google-afc-image test-google-rectangle-ads blog_user_a">
+
+
+                <script>
+  var hatenadfp = hatenadfp || {};
+  hatenadfp.adUnits = hatenadfp.adUnits || [];
+  hatenadfp.adUnits.push(
+
+      { unitName: 'blog_user_2nd', size: [[300, 250], [336, 280]], divId: 'google_afc_user_container_1', allowContentMatch: true }
+
+  );
+  hatenadfp.isNGContent = false;
+
+</script>
+
+                <div id="google_afc_user_container_1" class="google_afc_blocklink2_5 google_afc_boder" data-google-query-id="CPKMgcu_xc4CFdKXvAodHpwFFA"><div id="google_ads_iframe_/4374287/blog_user_2nd_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/4374287/blog_user_2nd_0" title="3rd party ad content" name="google_ads_iframe_/4374287/blog_user_2nd_0" width="336" height="280" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe><object type="application/x-shockwave-flash" data="//pagead2.googlesyndication.com/osd/hbe.swf?id=2~0" width="1" height="1" style="visibility: hidden; opacity: 0; z-index: -999999; position: fixed; left: 292px; top: 9250.55px;"><param name="movie" value="//pagead2.googlesyndication.com/osd/hbe.swf?id=2~0"><param name="allowscriptaccess" value="always"><param name="wmode" value="opaque"></object></div><iframe id="google_ads_iframe_/4374287/blog_user_2nd_0__hidden__" title="" name="google_ads_iframe_/4374287/blog_user_2nd_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div>
+
+
+
+            </div>
+
+
+
+
+      <div class="customized-footer">
+
+
+
+      </div>
+
+      <div class="comment-box">
+
+        <ul class="comment">
+
+             <li class="read-more-comments" style="display: none;"><a>もっと読む (0)</a></li>
+
+        </ul>
+
+          <a class="leave-comment-title">コメントを書く</a>
+
+      </div>
+      <!-- enjapan ad -->
+
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+
+
+            <!-- rakuten_ad_target_end -->
+            <!-- google_ad_section_end -->
+
+
+
+        </div>
+      </div>
+
+
+      <aside id="box1">
+        <div id="box1-inner">
+        </div>
+      </aside>
+
+    </div><!-- #wrapper -->
+
+    <aside id="box2">
+
+  <div id="box2-inner">
+
+
+
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-module-title">
+    プロフィール
+  </div>
+  <div class="hatena-module-body">
+
+    <a href="http://aloedev.hatenablog.com/about" class="profile-icon-link">
+      <img src="http://cdn1.www.st-hatena.com/users/co/cocoro27/profile.gif?1460875592" alt="id:cocoro27" class="profile-icon">
+    </a>
+
+
+
+    <span class="id">
+      <a href="http://aloedev.hatenablog.com/about" class="hatena-id-link"><span data-load-nickname="1" data-user-name="cocoro27"><span class="user-name-nickname">あろえりーな</span> <span class="user-name-paren">(</span><span class="user-name-hatena-id">id:cocoro27</span><span class="user-name-paren">)</span></span></a>
+
+
+
+
+      <a href="http://blog.hatena.ne.jp/guide/pro" title="はてなブログPro"><i class="blog-sprite-pro"></i></a>
+
+
+
+
+    </span>
+
+
+
+    <div class="profile-description">
+      <p>ブログテーマ開発用ブログ。 For development Blog Theme.</p><p></p><div class="follow-buttons"><br>
+	<div class="follow-button follow-button-blog"><br>
+		<div class="follow-button-inner follow-button-inner-blog" onclick="blog();"><br>
+			<i class="icon blogicon-hatenablog"></i><br>
+			<span class="tooltip tooltip-feedly">読者になる</span><br>
+		</div>	</div>	<div class="follow-button follow-button-twitter"><br>
+		<div class="follow-button-inner follow-button-inner-twitter" onclick="twitter();"><br>
+			<i class="icon fa fa-twitter"></i><br>
+			<span class="tooltip tooltip-twitter">Twitterをフォロー</span><br>
+		</div>	</div>	<div class="follow-button follow-button-feedly"><br>
+		<div class="follow-button-inner follow-button-inner-feedly" onclick="feedly();"><br>
+			<i class="icon icon-al-feedly"></i><br>
+			<span class="tooltip tooltip-feedly">Feedlyで購読</span><br>
+		</div>	</div>	<div class="follow-button follow-button-github"><br>
+		<div class="follow-button-inner follow-button-inner-github" onclick="github();"><br>
+			<i class="icon fa fa-github"></i><br>
+			<span class="tooltip tooltip-github">GitHubをフォロー</span><br>
+		</div>	</div></div><script>
+	function blog() {
+		window.open('http://blog.hatena.ne.jp/はてなID/ブログURL(http://以降)/subscribe');
+	};
+	function twitter() {
+		window.open('https://twitter.com/intent/follow?screen_name=アカウント');
+	};
+	function feedly() {
+		window.open('http://feedly.com/i/welcome/feed/ブログフィードのURL');
+	};
+	function github() {
+		window.open('https://github.com/アカウント名');
+	};
+</script><p></p>
+
+    </div>
+
+
+
+      <div class="hatena-follow-button-box btn-subscribe js-hatena-follow-button-box">
+
+  <a href="#" class="hatena-follow-button js-hatena-follow-button subscribing">
+    <span class="subscribing">
+      <span class="foreground">読者です</span>
+      <span class="background">読者をやめる</span>
+    </span>
+    <span class="unsubscribing" data-track-name="profile-widget-subscribe-button" data-track-once="">
+      <span class="foreground">読者になる</span>
+      <span class="background">読者になる</span>
+    </span>
+  </a>
+  <div class="subscription-count-box js-subscription-count-box" style="display: block;">
+    <i></i>
+    <u></u>
+    <span class="subscription-count js-subscription-count">1</span>
+  </div>
+</div>
+
+
+
+
+
+
+  </div>
+</div>
+
+
+
+
+      <div class="hatena-module hatena-module-search-box">
+  <div class="hatena-module-title">
+    検索
+  </div>
+  <div class="hatena-module-body">
+    <form class="search-form unedited" role="search" action="http://aloedev.hatenablog.com/search" method="get">
+      <input type="text" name="q" class="search-module-input" value="" placeholder="ブログ内検索" required="">
+      <input type="submit" value="検索" class="search-module-button" disabled="disabled">
+    </form>
+  </div>
+</div>
+
+
+
+
+      <div class="hatena-module hatena-module-links">
+  <div class="hatena-module-title">
+    リンク
+  </div>
+  <div class="hatena-module-body">
+    <ul class="hatena-urllist">
+
+        <li>
+          <a href="http://hatenablog.com/">はてなブログ</a>
+        </li>
+
+        <li>
+          <a href="http://hatenablog.com/guide?via=200109">ブログをはじめる（無料）</a>
+        </li>
+
+        <li>
+          <a href="http://staff.hatenablog.com">お知らせ</a>
+        </li>
+
+        <li>
+          <a href="http://hatenablog.com/g/">はてなブログ グループ</a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+
+      <div class="hatena-module hatena-module-recent-entries ">
+  <div class="hatena-module-title">
+    <a href="http://aloedev.hatenablog.com/archive">
+      最新記事
+    </a>
+  </div>
+  <div class="hatena-module-body">
+    <ul class="recent-entries hatena-urllist ">
+
+
+
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+
+
+        <a href="http://aloedev.hatenablog.com/entry/2016/04/09/034458" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">見出しテスト        </a>
+
+
+
+              </div>
+    </li>
+
+
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+
+
+        <a href="http://aloedev.hatenablog.com/entry/2016/04/03/010635" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">弱小ブログだけどProにしたっていいじゃない        </a>
+
+
+
+              </div>
+    </li>
+
+
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+
+
+        <a href="http://aloedev.hatenablog.com/entry/2016/04/02/224540" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">sample サンプル        </a>
+
+
+
+              </div>
+    </li>
+
+</ul>
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="hatena-module hatena-module-archive" data-archive-type="default" data-archive-url="http://aloedev.hatenablog.com/archive">
+  <div class="hatena-module-title">
+    <a href="http://aloedev.hatenablog.com/archive">月別アーカイブ</a>
+  </div>
+  <div class="hatena-module-body">
+
+
+
+
+
+      <ul class="hatena-urllist">
+
+          <li class="archive-module-year" data-year="2016">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a href="http://aloedev.hatenablog.com/archive/2016" class="archive-module-year-title">
+              2016 (3)
+            </a>
+            <ul class="archive-module-months">
+
+                <li class="archive-module-month">
+                  <a href="http://aloedev.hatenablog.com/archive/2016/4" class="archive-module-month-title">
+                    2016 / 4 (3)
+                  </a>
+                </li>
+
+            </ul>
+          </li>
+
+      </ul>
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="hatena-module hatena-module-category">
+  <div class="hatena-module-title">
+    カテゴリー
+  </div>
+  <div class="hatena-module-body">
+    <ul class="hatena-urllist">
+
+        <li>
+          <a href="http://aloedev.hatenablog.com/archive/category/%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB">
+            サンプル (3)
+          </a>
+        </li>
+
+        <li>
+          <a href="http://aloedev.hatenablog.com/archive/category/design">
+            design (2)
+          </a>
+        </li>
+
+        <li>
+          <a href="http://aloedev.hatenablog.com/archive/category/%E3%83%AC%E3%82%B7%E3%83%94">
+            レシピ (1)
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+<div class="hatena-module hatena-module-recent-comments">
+  <div class="hatena-module-title">
+    コメント
+  </div>
+  <div class="hatena-module-body" data-count="5">
+    <ul class="recent-comments hatena-urllist"></ul>
+  </div>
+  <script class="recent-comments-template" type="text/x-underscore-template">
+    <li>
+      <span class="user-id">
+        <img src="<%- comment.icon_url %>" class="hatena-id-icon" alt="<%- comment.user_name %>" title="<%- comment.user_name %>" />
+        <% if (comment.is_hatena_user) { %>
+          <span data-load-nickname="1" data-user-name="<%- comment.user_name %>">id:<%- comment.user_name %></span>
+        <% } else { %>
+          <%- comment.user_name %>
+        <% } %>
+      </span>
+      <a href="<%- comment.entry_url %>"><%- comment.entry_title %></a>
+      <span class="recent-comment-time">(<time data-relative class="recent-comment-time" data-epoch="<%- comment.epoch * 1000 %>"><%- comment.time %></time>)</span>
+    </li>
+  </script>
+</div>
+
+
+
+
+
+
+<div class="hatena-module hatena-module-circles">
+  <div class="hatena-module-title">
+    参加グループ
+  </div>
+  <div class="hatena-module-body">
+    <ul class="hatena-urllist circle-urllist">
+
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+<div class="hatena-module hatena-module-html">
+    <div class="hatena-module-title">HTML</div>
+  <div class="hatena-module-body">
+    <div>custom html module</div>
+  </div>
+</div>
+
+
+
+
+
+<div class="hatena-module hatena-module-entries-access-ranking" data-count="5" data-display_entry_category="0" data-display_entry_image="0" data-display_entry_image_size_width="100" data-display_entry_image_size_height="100" data-display_entry_body_length="0" data-display_entry_date="0" data-display_bookmark_count="0" data-source="access">
+  <div class="hatena-module-title">
+
+      注目記事
+
+  </div>
+  <div class="hatena-module-body">
+
+  <ul class="entries-access-ranking hatena-urllist ">
+
+
+</ul>
+</div>
+</div>
+
+
+
+
+
+  </div>
+</aside>
+
+  </div>
+</div>
+
+
+
+
+
+
+          <script type="text/javascript" src="//b.hatena.ne.jp/js/hatena_dfp2.js"></script>
+
+
+      </div>
+    </div>
+
+
+      <footer id="footer" data-brand="hatenablog">
+  <div id="footer-inner">
+    <address>
+
+      <a href="http://aloedev.hatenablog.com/about"><img src="http://cdn1.www.st-hatena.com/users/co/cocoro27/profile.gif" width="16" height="16" alt="">
+        <span data-load-nickname="1" data-user-name="cocoro27"><span class="user-name-nickname">あろえりーな</span> <span class="user-name-paren">(</span><span class="user-name-hatena-id">id:cocoro27</span><span class="user-name-paren">)</span></span>
+      </a>
+    </address>
+    <p class="services">Powered by <a href="http://hatenablog.com/">Hatena Blog</a></p>
+  </div>
+</footer>
+
+
+
+
+
+
+  <script src="https://s.hatena.ne.jp/js/HatenaStar.js"></script>
+
+
+
+  <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+
+<script src="https://apis.google.com/js/platform.js" async="" defer="" gapi_processed="true">
+  { lang: 'ja', "parsetags": "explicit" }
+</script>
+<script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-with-addons.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.min.js"></script>
+
+
+<script type="text/javascript" src="//cdn.blog.st-hatena.com/js/vendor/jquery/jquery.min.js?version=1.9.1"></script>
+<script type="text/javascript" src="//cdn.blog.st-hatena.com/js/vendor/jqueryui/ui/minified/jquery-ui.custom.min.js?version=1.10.0"></script>
+<script type="text/javascript" src="//cdn.blog.st-hatena.com/js/vendor/Flot/jquery.flot.js?version=0.8.3"></script>
+<script type="text/javascript" src="//cdn.blog.st-hatena.com/js/vendor/Flot/jquery.flot.time.js?version=0.8.3"></script>
+
+
+
+
+<script id="hatenablog-js" data-env="production" type="text/javascript" src="//cdn.blog.st-hatena.com/js/hatenablog.js?version=1e5d0a51152133e81b9215709db77a50" crossorigin="anonymous"></script><div style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; display: none;"></div>
+<script type="text/javascript" src="//cdn.blog.st-hatena.com/js/texts-ja.js?version=1e5d0a51152133e81b9215709db77a50"></script>
+
+
+  <script type="text/javascript">Hatena.Diary.GlobalHeader.init()</script>
+
+
+<script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+
+
+
+
+
+  <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="http://staticxx.facebook.com/connect/xd_arbiter/r/Lcj5EtQ5qmD.js?version=42#channel=f146286e2f22754&amp;origin=http%3A%2F%2Faloedev.hatenablog.com" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://staticxx.facebook.com/connect/xd_arbiter/r/Lcj5EtQ5qmD.js?version=42#channel=f146286e2f22754&amp;origin=http%3A%2F%2Faloedev.hatenablog.com" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=719729204785177&version=v2.7";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><div style="top: -9999px; z-index: -9999;"></div><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><iframe src="http://us-u.openx.net/w/1.0/pd?plm=5&amp;ph=df544eff-6086-432f-957e-aa9175d18515" width="0" height="0" style="display:none;"></iframe></body></html>
