@@ -8,30 +8,61 @@
 */
 
 /*  import normalize */
-@import "less/_normalize.less";
+@import "./lib/_normalize.less";
 
 /*  import mixin */
-@import "less/_mixin.less";
+@import "./lib/_mixin.less";
 
 /*  import variable */
-@import "less/_variable.less";
+@import "./lib/_variable.less";
 
 /* Common */
+@white: #fff;
+@text-color: #455A64;
+@text-sub-color: #B0BEC5;
+@border-color: #CFD8DC;
+
+@footer-color: #78909C; // test
+
+@main-color: #3DB680;
+@sub-color: #91DBB9;
+@accent-color: #FF5722;
+
+
+// @font-face {
+//     font-family: 'Koruri Regular';
+//     src: url('../lib/fonts/Koruri-Regular-sub.eot');
+//     src: url('../lib/fonts/Koruri-Regular-sub.eot?#iefix') format('embedded-opentype'),
+//     url('../lib/fonts/Koruri-Regular-sub.woff') format('woff'),
+//     url('../lib/fonts/Koruri-Regular-sub.ttf') format('truetype');
+// }
+
+@font-face {
+  font-family: 'はれのそら明朝';
+  src: url('../lib/fonts/Harenosora.otf') format('opentype');
+}
+
+.icon-awesome {
+  font-family: 'FontAwesome';
+}
 
 html,
 body {
-    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic', sans-serif;
-    color: @text;
+    font-family: "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, Meiryo, sans-serif;
+    color: @text-color;
     background-color: @background;
 }
 
 a {
-    color: @link;
+    color: @main-color;
+    text-decoration: none;
+    transition: color 0.4s ease;
     &:hover {
-        color: @hover;
+        color: @accent-color;
+        text-decoration: none;
     }
     &:visited {
-        color: @visited;
+        text-decoration: none;
     }
 }
 
@@ -102,14 +133,22 @@ a.keyword {
 /* container */
 
 #container {
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+    width: 100%;
+    padding: 0;
     padding-top: 37px; // グローバルヘッダを fixed にしているため
+    &-inner {
+      width: 100%;
+      max-width: 100%;
+      margin: 0px;
+      &::before {
+        content: '';
+        opacity: .25;
+      }
+    }
 
     #content {
         .clearfix;
+        width: 100%;
     }
 }
 
@@ -117,32 +156,24 @@ a.keyword {
     padding-top: 0; // グローバルヘッダ非表示の時
 }
 
-/* 2カラムレイアウト */
-
 #main {
-    width: 600px;
-    float: left;
-}
-
-#box2 {
-    width: 300px;
-    float: right;
-}
-
-/* 1カラムにしたい場合は下記のコメントアウトを外してください ----
-
-#main {
-    width: 100%;
+    max-width: 780px;
+    width: 78%;
+    margin: 64px auto;
     float: none;
 }
 
 #box2 {
     width: 100%;
+    max-width: 100%;
+    background-color: @footer-color;
+    color: @white;
     float: none;
 }
 
 #box2-inner {
-    width: 960px;
+    width: 940px;
+    margin: 0 auto;
     .clearfix;
     overflow: hidden;
 }
@@ -158,17 +189,33 @@ a.keyword {
     }
 }
 
----- END 1カラム */
-
 /* header */
 
 #blog-title {
     margin: 30px 0;
     padding: 20px 0;
+    &-inner {
+      position: relative;
+      background-size: cover;
+      background-position: center center !important;
+      height: auto !important;
+    }
+    // &-inner::before {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   display: block;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-image: linear-gradient(0deg, rgba(27, 35, 39, 0.247059) 60%, rgba(173, 173, 173, 0.247059));
+    // }
 }
 
 #title {
     margin: 0;
+    font-size: 2.2rem;
+    font-family: 'はれのそら明朝';
     a {
         color: @text;
     }
@@ -177,18 +224,21 @@ a.keyword {
 #blog-description {
     font-weight: normal;
     font-size: 80%;
+    font-family: 'はれのそら明朝';
     margin: 5px 0 0 0;
+
 }
 
 /* ヘッダ画像を設定したとき */
 
 .header-image-enable {
     #title {
-        padding-top: 70px;
+        padding-left: 18px;
+        padding-top: 16%;
     }
-    #title,
     #blog-description {
         padding-left: 20px;
+        padding-bottom: 14%;
     }
 
 }
@@ -210,13 +260,22 @@ a.keyword {
 
 .entry {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    background: none;
+    padding: 0;
+    &::before {
+      content: '＊ ＊ ＊';
+      display: block;
+      margin: 0 auto 50px auto;
+      text-align: center;
+      color: @text-sub-color;
+    }
 }
 
 .entry-header {
-    padding: 0 0 10px 0;
-    margin-bottom: 20px;
-    border-bottom: 1px solid @border;
+    padding: 0;
+    margin-bottom: 12px;
+    border-bottom: 0px;
     position: relative;
 }
 
@@ -224,28 +283,45 @@ a.keyword {
     margin: 0;
     line-height: 1.3;
     font-size: 160%;
+    border-bottom: 0px;
+    padding: 16px 0 4px 0;
+    .entry-title-link {
+      color: @main-color !important;
+    }
 }
 
 /* 日付 */
 
 .date {
-    font-weight: bold;
-    margin-bottom: 10px;
-
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
     a {
-        color: @link;
         text-decoration: none;
-        font-size: 90%;
+        font-size: 70%;
+        color: @text-sub-color;
+        .hyphen {
+          visibility: hidden;
+        }
     }
 }
 
 /* カテゴリ */
 
 .categories {
-    margin-top: 10px;
+    margin: 0;
+    padding: 0;
+    background: none;
     font-size: 80%;
     a {
-        color: @text-light;
+        margin: 0 16px 0 0;
+        color: @main-color;
+        &::before {
+          content: '\f02b';
+          .icon-awesome;
+          padding: 0 8px 0 0;
+          color: @sub-color;
+        }
     }
     &.no-categories {
         margin: 0;  // カテゴリー無いとき
@@ -266,16 +342,30 @@ a.keyword {
 
 .entry-content {
     font-size: 95%;
-    line-height: 1.7;
-    padding-bottom: 10px;
-    border-bottom: 1px solid @border;
+    line-height: 1.8;
+    letter-spacing: .6px;
+    padding: 0px;
+    border-bottom: 0px;
+    &::before {
+      content: '';
+      display: block;
+      margin: 8px auto 24px auto;
+      // width: 76px;
+      width: 100%;
+      height: 2px;
+      background: #00C9FF; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #00C9FF , #92FE9D); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #00C9FF , #92FE9D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
 
     p {
-        margin: 0 0 1em 0;
+        margin: 0 0 2rem 0;
     }
 
     img {
         max-width: 100%;
+        box-shadow: 2px 2px 4px @text-sub-color;
     }
 
     h1,h2,h3,h4,h5,h6 {
@@ -285,18 +375,29 @@ a.keyword {
 
     h1 {
         font-size: 160%;
+        border-bottom: 1px solid @border-color;
     }
 
     h2 {
         font-size: 150%;
+        border-bottom: 1px solid @border-color;
     }
 
     h3 {
         font-size: 140%;
+        border-bottom: 1px solid @main-color;
+        border-left: 6px solid @main-color;
+        padding: 0 0 0 12px;
     }
 
     h4 {
         font-size: 130%;
+        &::before {
+          content: '\f00c';
+          .icon-awesome;
+          color: @main-color;
+          padding: 0 6px 0 0;
+        }
     }
 
     h5 {
@@ -305,6 +406,10 @@ a.keyword {
 
     h6 {
         font-size: 100%;
+    }
+
+    hr {
+      border-top: 1px solid @border-color;
     }
 
     table {
@@ -378,6 +483,7 @@ a.keyword {
 }
 
 .entry-footer-section {
+    display: none;
     font-size: 80%;
     color: @text-light;
     a {
@@ -665,4 +771,4 @@ a.keyword {
 
 
 /*  import media queries */
-@import "less/_media-queries.less";
+@import "./lib/_media-queries.less";
